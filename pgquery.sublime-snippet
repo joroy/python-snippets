@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[query = """${0:}
+"""
+self._fetch(query)]]></content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>PG Query</description>
+</snippet>
