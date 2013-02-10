@@ -1,7 +1,8 @@
 <snippet>
-    <content><![CDATA[query = """${0:}
-"""
-self._fetch(query)]]></content>
+    <content><![CDATA[def ${1:function}(self${4/([^,])?(.*)/(?1:, )/}${4:arg}):
+    query = """${0:}
+            """
+    return self._fetch(query${4/([^,])?(.*)/(?1:, \())/}${4:arg}${4/([^,])?(.*)/(?1:,\))/})]]></content>
     <tabTrigger>query</tabTrigger>
     <scope>source.python</scope>
     <description>PG Query</description>
